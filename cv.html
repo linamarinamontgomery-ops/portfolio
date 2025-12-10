@@ -3,164 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>Carey Akida - Software Engineer CV</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         body {
-            font-family: 'Times New Roman', Times, serif;
-            line-height: 1.6;
+            font-family:       'Times New Roman', Times, serif;
+            line-height:  1.5;
             color: #333;
             background-color: #f5f5f5;
-            padding: 20px;
         }
-
+        
         .container {
             max-width: 8.5in;
-            height: auto;
-            margin: 0 auto;
+            height: 11in;
+            margin: 20px auto;
+            padding: 40px;
             background-color: white;
-            padding: 0.75in;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
+        
         .header {
             text-align: center;
-            margin-bottom: 0.3in;
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.2in;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
         }
-
-        .header h1 {
+        
+        .name {
             font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-
-        .header p {
-            font-size: 12px;
-            margin: 3px 0;
-        }
-
-        .section {
-            margin-bottom: 0.25in;
-        }
-
-        .section-title {
-            font-size: 14px;
-            font-weight: bold;
-            border-bottom: 1px solid #666;
-            padding-bottom: 5px;
-            margin-bottom: 0.1in;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .entry {
-            margin-bottom: 0.15in;
-            padding-left: 0.2in;
-        }
-
-        .entry-title {
-            font-weight: bold;
-            font-size: 12px;
-            margin-bottom: 2px;
-        }
-
-        .entry-subtitle {
-            font-style: italic;
-            font-size: 11px;
-            color: #555;
+            font-weight:       bold;
             margin-bottom: 3px;
         }
-
-        .entry-description {
+        
+        .title {
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
             font-size: 11px;
-            line-height: 1.4;
-            margin-bottom: 5px;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0.1in;
-            font-size: 11px;
-        }
-
-        .skill-category {
-            padding: 5px;
-        }
-
-        .skill-category-title {
-            font-weight: bold;
-            margin-bottom: 3px;
-            font-size: 11px;
-        }
-
-        .skill-item {
-            margin-bottom: 2px;
-            font-size: 10px;
-        }
-
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .project-link {
-            color: #0066cc;
-            font-weight: normal;
-        }
-
-        .icon {
-            display: inline-block;
-            width: 16px;
-            height: 16px;
-            margin-right: 5px;
-            vertical-align: middle;
-        }
-
-        .header-contact {
             display: flex;
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
-            font-size: 11px;
-            margin-top: 8px;
         }
-
-        .contact-item {
-            display: flex;
+        
+        .contact-info span {
+            display: inline-flex;
             align-items: center;
-            gap: 4px;
+            gap: 5px;
         }
-
-        .bold {
-            font-weight: bold;
+        
+        .contact-info svg {
+            width: 14px;
+            height: 14px;
+            stroke: #333;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
         }
-
-        .italic {
+        
+        .section {
+            margin-bottom: 15px;
+        }
+        
+        .section-title {
+            font-size:       12px;
+            font-weight:       bold;
+            border-bottom: 1px solid #000;
+            padding-bottom:       4px;
+            margin-bottom:      8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .job, .project, .education-item {
+            margin-bottom:       10px;
+        }
+        
+        .job-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2px;
+        }
+        
+        .job-title, .project-title {
+            font-weight:  bold;
+            font-size:   12px;
+        }
+        
+        .company {
+            font-size: 11px;
+            margin-bottom: 2px;
+        }
+        
+        .date {
+            font-size: 11px;
             font-style: italic;
         }
-
-        @media print {
-            body {
-                background-color: white;
-                padding: 0;
-            }
-            .container {
-                box-shadow: none;
-                max-width: 100%;
-                padding: 0.75in;
-            }
+        
+        .description {
+            font-size: 11px;
+            margin-top: 4px;
+        }
+        
+        .description ul {
+            margin-left:      20px;
+            margin-top:   4px;
+        }
+        
+        .description li {
+            margin-bottom:       3px;
+            text-align: justify;
+        }
+        
+        .skill-item {
+            font-size: 11px;
+            margin-bottom: 6px;
+            text-align: justify;
+        }
+        
+        .skill-label {
+            font-weight:   bold;
+            display: inline;
+        }
+        
+        .education-item {
+            font-size: 11px;
+            margin-bottom: 8px;
+        }
+        
+        .degree {
+            font-weight:    bold;
+            margin-bottom: 2px;
+        }
+        
+        .school {
+            font-style: italic;
+            margin-bottom: 2px;
+        }
+        
+        a {
+            color: #0066cc;
+            text-decoration:       none;
+        }
+        
+        a:hover {
+            text-decoration:    underline;
+        }
+        
+        .profile {
+            font-size: 11px;
+            text-align: justify;
+            margin-bottom: 8px;
+            line-height: 1.4;
         }
     </style>
 </head>
