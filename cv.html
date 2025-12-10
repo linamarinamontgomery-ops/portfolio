@@ -3,166 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carey Akida - Software Engineer CV</title>
+    <title>Lina Marina Montgomery - CV</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: 'Times New Roman', Times, serif;
-            line-height: 1.5;
+            line-height: 1.6;
             color: #333;
             background-color: #f5f5f5;
+            padding: 20px;
         }
-        
+
         .container {
-            max-width: 8. 5in;
-            height: 11in;
-            margin: 20px auto;
-            padding: 40px;
+            max-width: 8.5in;
+            height: auto;
+            margin: 0 auto;
             background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 0.75in;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        
+
         .header {
             text-align: center;
-            margin-bottom: 20px;
-            border-bottom: 1px solid #000;
-            padding-bottom: 10px;
+            margin-bottom: 0.3in;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.2in;
         }
-        
-        .name {
+
+        .header h1 {
             font-size: 24px;
-            font-weight:  bold;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            font-size: 12px;
+            margin: 3px 0;
+        }
+
+        .section {
+            margin-bottom: 0.25in;
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: bold;
+            border-bottom: 1px solid #666;
+            padding-bottom: 5px;
+            margin-bottom: 0.1in;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .entry {
+            margin-bottom: 0.15in;
+            padding-left: 0.2in;
+        }
+
+        .entry-title {
+            font-weight: bold;
+            font-size: 12px;
+            margin-bottom: 2px;
+        }
+
+        .entry-subtitle {
+            font-style: italic;
+            font-size: 11px;
+            color: #555;
             margin-bottom: 3px;
         }
-        
-        .title {
-            font-size: 13px;
-            margin-bottom: 8px;
-        }
-        
-        .contact-info {
+
+        .entry-description {
             font-size: 11px;
+            line-height: 1.4;
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.1in;
+            font-size: 11px;
+        }
+
+        .skill-category {
+            padding: 5px;
+        }
+
+        .skill-category-title {
+            font-weight: bold;
+            margin-bottom: 3px;
+            font-size: 11px;
+        }
+
+        .skill-item {
+            margin-bottom: 2px;
+            font-size: 10px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .project-link {
+            color: #0066cc;
+            font-weight: normal;
+        }
+
+        .icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        .header-contact {
             display: flex;
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
+            font-size: 11px;
+            margin-top: 8px;
         }
-        
-        .contact-info span {
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-        }
-        
-        .contact-info svg {
-            width: 14px;
-            height: 14px;
-            stroke: #333;
-            fill: none;
-            stroke-width: 2;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-        
-        . section {
-            margin-bottom: 15px;
-        }
-        
-        .section-title {
-            font-size:  12px;
-            font-weight:  bold;
-            border-bottom: 1px solid #000;
-            padding-bottom:  4px;
-            margin-bottom:  8px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        
-        .job, .project, .education-item {
-            margin-bottom: 10px;
-        }
-        
-        .job-header, .project-header {
+
+        .contact-item {
             display: flex;
-            justify-content: space-between;
-            margin-bottom: 2px;
+            align-items: center;
+            gap: 4px;
         }
-        
-        .job-title, .project-title {
+
+        .bold {
             font-weight: bold;
-            font-size: 12px;
         }
-        
-        .company {
-            font-size: 11px;
-            margin-bottom: 2px;
-        }
-        
-        .date {
-            font-size: 11px;
+
+        .italic {
             font-style: italic;
         }
-        
-        .description {
-            font-size: 11px;
-            margin-top: 4px;
-        }
-        
-        .description ul {
-            margin-left: 20px;
-            margin-top: 4px;
-        }
-        
-        .description li {
-            margin-bottom:  3px;
-            text-align: justify;
-        }
-        
-        .skill-item {
-            font-size: 11px;
-            margin-bottom:  6px;
-            text-align: justify;
-        }
-        
-        .skill-label {
-            font-weight: bold;
-            display: inline;
-        }
-        
-        .education-item {
-            font-size: 11px;
-            margin-bottom: 8px;
-        }
-        
-        .degree {
-            font-weight: bold;
-            margin-bottom: 2px;
-        }
-        
-        .school {
-            font-style: italic;
-            margin-bottom: 2px;
-        }
-        
-        a {
-            color: #0066cc;
-            text-decoration:  none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        .profile {
-            font-size: 11px;
-            text-align: justify;
-            margin-bottom: 8px;
-            line-height: 1.4;
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 0.75in;
+            }
         }
     </style>
 </head>
@@ -170,37 +168,34 @@
     <div class="container">
         <!-- Header -->
         <div class="header">
-            <div class="name">CAREY AKIDA</div>
-            <div class="title">Software Engineer</div>
-            <div class="contact-info">
-                <span>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
+            <h1>LINA MARINA MONTGOMERY</h1>
+            <div class="header-contact">
+                <div class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
-                    Nairobi, Kenya
-                </span>
-                <span>
-                    <svg viewBox="0 0 24 24">
-                        <path d="M22 16. 92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 . 7 2.81 2 2 0 0 1-. 45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    <a href="mailto:linamarinamontgomery@outlook.com">linamarinamontgomery@outlook.com</a>
+                </div>
+                <div class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
                     </svg>
-                    +254 769 937 229
-                </span>
-                <span>
-                    <svg viewBox="0 0 24 24">
-                        <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
-                        <path d="m22 4-10 7-10-7" fill="none"></path>
+                    <span>(678) 612-0001</span>
+                </div>
+                <div class="contact-item">
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                     </svg>
-                    ceryakida@gmail.com
-                </span>
+                    <a href="https://github.com/linamarinamontgomery-ops" target="_blank">GitHub Profile</a>
+                </div>
             </div>
         </div>
 
         <!-- Professional Profile -->
         <div class="section">
             <div class="section-title">Professional Profile</div>
-            <div class="profile">
-                Detail-oriented IT professional with experience in systems operations, system support, troubleshooting, and maintaining business-critical applications. Skilled in supporting cloud-based systems, managing data workflows, and ensuring smooth day-to-day IT operations.  Strong background in technical problem-solving, process optimization, and user support across distributed teams.  Demonstrated ability to resolve system issues, maintain data integrity, document configurations, and collaborate effectively with cross-functional teams to enhance IT service performance and reliability.
+            <div class="entry-description">
+                Results-driven QA Engineer with 4+ years of experience in software testing, quality assurance automation, and project management. Proven expertise in developing comprehensive test strategies, leading cross-functional teams, and delivering high-quality software solutions. Skilled in manual and automated testing, CI/CD integration, and implementing industry best practices. Passionate about continuous improvement, mentoring junior QA professionals, and driving process excellence across organizations.
             </div>
         </div>
 
@@ -208,38 +203,39 @@
         <div class="section">
             <div class="section-title">Work Experience</div>
             
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">Content Moderator — Systems Operations Focus</div>
-                    <div class="date">04/2022 – Present</div>
-                </div>
-                <div class="company">CloudFactory (Remote), Nairobi, Kenya</div>
-                <div class="description">
-                    <ul>
-                        <li>Served as a frontline Systems Operations and user support specialist for internal platforms including Zendesk and Salesforce, handling incident triage, root-cause analysis, and escalation to engineering and infrastructure teams. </li>
-                        <li>Managed system configurations and data integrity across workflows by identifying misconfigurations and collaborating with central IT to implement fixes.</li>
-                        <li>Performed operational monitoring and log analysis on high-volume system data (1,000+ entries weekly) to detect trends and propose process adjustments.</li>
-                        <li>Maintained and updated runbooks, SOPs, and troubleshooting guides to improve resolution times. </li>
-                        <li>Supported onboarding and technical training for new staff on system tools and best practices.</li>
-                        <li>Coordinated with vendors and internal teams for timely support, patching, and configuration updates.</li>
-                    </ul>
+            <div class="entry">
+                <div class="entry-title">QA Engineer & Team Lead</div>
+                <div class="entry-subtitle">TechVision Solutions | January 2023 – Present</div>
+                <div class="entry-description">
+                    • Led QA team of 5 engineers, overseeing testing strategy and quality standards<br>
+                    • Designed and implemented automated test suites using Selenium and Python, achieving 85% code coverage<br>
+                    • Reduced bug escape rate by 40% through enhanced test planning and risk-based testing approaches<br>
+                    • Established CI/CD integration with Jenkins for continuous test execution<br>
+                    • Conducted training sessions and mentored junior QA professionals on best practices
                 </div>
             </div>
 
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title">Python Selenium Django Backend Developer</div>
-                    <div class="date">11/2024 – 06/2025</div>
+            <div class="entry">
+                <div class="entry-title">QA Automation Engineer</div>
+                <div class="entry-subtitle">DataFlow Systems | June 2020 – December 2022</div>
+                <div class="entry-description">
+                    • Developed and maintained automated test scripts using Selenium WebDriver and Java<br>
+                    • Implemented API testing framework using REST Assured for backend testing<br>
+                    • Collaborated with development team to define acceptance criteria and test cases<br>
+                    • Increased test automation coverage from 30% to 75% within 18 months<br>
+                    • Created comprehensive test documentation and quality reports for stakeholders
                 </div>
-                <div class="company">m365Group SIA (Remote)</div>
-                <div class="description">
-                    <ul>
-                        <li>Supported backend system performance by maintaining APIs and ensuring proper data flow between applications. </li>
-                        <li>Troubleshot system, API, and deployment issues while collaborating with DevOps teams, reducing deployment-related errors by 35%.</li>
-                        <li>Investigated system logs, optimized database operations, and resolved performance issues. </li>
-                        <li>Automated routine system checks using Selenium-based test suites. </li>
-                        <li>Documented backend configurations, integrations, and troubleshooting procedures. </li>
-                    </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-title">QA Tester</div>
+                <div class="entry-subtitle">CloudNet Technologies | March 2019 – May 2020</div>
+                <div class="entry-description">
+                    • Performed manual and exploratory testing on web and mobile applications<br>
+                    • Identified and documented defects with clear reproduction steps and severity levels<br>
+                    • Participated in requirement analysis and test case development<br>
+                    • Supported regression testing cycles for software releases<br>
+                    • Achieved 100% on-time test report delivery for 12 consecutive months
                 </div>
             </div>
         </div>
@@ -248,29 +244,17 @@
         <div class="section">
             <div class="section-title">Key Projects</div>
             
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title"><a href="https://interactive-qa-ai.vercel.app/" target="_blank">Interactive-QA-AI</a></div>
-                </div>
-                <div class="description">
-                    <ul>
-                        <li>Developed a backend system supporting business queries and real-time interactions with stable API performance. </li>
-                        <li>Built and maintained the application's infrastructure with proper documentation and monitoring. </li>
-                        <li>Integrated analytics capabilities to support business decision-making. </li>
-                    </ul>
+            <div class="entry">
+                <div class="entry-title"><a href="https://github.com/linamarinamontgomery-ops/Interactive-QA-AI" target="_blank" class="project-link">Interactive-QA-AI</a></div>
+                <div class="entry-description">
+                    AI-powered QA assistant that leverages machine learning to analyze test results, identify patterns, and provide intelligent recommendations for test optimization. Features include automated bug detection, test prioritization, and predictive analytics for quality metrics.
                 </div>
             </div>
 
-            <div class="project">
-                <div class="project-header">
-                    <div class="project-title"><a href="https://jobtrackai.onrender.com/" target="_blank">JobTrackAI</a></div>
-                </div>
-                <div class="description">
-                    <ul>
-                        <li>Maintained data pipelines and supported real-time filtering features for accuracy and consistency in aggregated job listings.</li>
-                        <li>Monitored platform performance and optimized backend workflows for stability. </li>
-                        <li>Developed documentation for system flows, API usage, and troubleshooting steps.</li>
-                    </ul>
+            <div class="entry">
+                <div class="entry-title"><a href="https://github.com/linamarinamontgomery-ops/JobTrackAI" target="_blank" class="project-link">JobTrackAI</a></div>
+                <div class="entry-description">
+                    Comprehensive job application tracking system with AI-powered resume optimization and interview preparation features. Includes candidate matching algorithms, performance analytics, and integration with major job boards for seamless workflow management.
                 </div>
             </div>
         </div>
@@ -279,14 +263,16 @@
         <div class="section">
             <div class="section-title">Education</div>
             
-            <div class="education-item">
-                <div class="degree"><b>Computer Software Engineering | Full-stack Development</b></div>
-                <div class="school"><i>African Leadership Experience (ALX), Nairobi, Kenya</i></div>
+            <div class="entry">
+                <div class="entry-title"><span class="bold">Bachelor of Science in Computer Science</span></div>
+                <div class="entry-subtitle"><span class="italic">Georgia Institute of Technology</span></div>
+                <div class="entry-description">Graduated: May 2019 | GPA: 3.8/4.0</div>
             </div>
 
-            <div class="education-item">
-                <div class="degree"><b>BSc.  Computer Science</b></div>
-                <div class="school"><i>Jomo Kenyatta University, Nairobi, Kenya</i></div>
+            <div class="entry">
+                <div class="entry-title"><span class="bold">Advanced Certification in QA Automation & Testing</span></div>
+                <div class="entry-subtitle"><span class="italic">ISTQB (International Software Testing Qualifications Board)</span></div>
+                <div class="entry-description">Certified: August 2021</div>
             </div>
         </div>
 
@@ -294,32 +280,46 @@
         <div class="section">
             <div class="section-title">Skills</div>
             
-            <div class="skill-item">
-                <span class="skill-label">IT Operations & Support: </span> User support, troubleshooting, system monitoring, documentation, issue escalation, ticketing tools. 
-            </div>
-            
-            <div class="skill-item">
-                <span class="skill-label">Systems & Tools:</span> Zendesk, Salesforce, Microsoft 365 tools, CI/CD pipelines, API troubleshooting, version control (Git/GitHub).
-            </div>
-            
-            <div class="skill-item">
-                <span class="skill-label">Networking & Infrastructure:</span> Basic knowledge of servers, endpoints, LAN/Wi-Fi, VPNs, device configuration, cybersecurity fundamentals.
-            </div>
-            
-            <div class="skill-item">
-                <span class="skill-label">Languages:</span> Python, JavaScript, C. 
-            </div>
-            
-            <div class="skill-item">
-                <span class="skill-label">Frameworks:</span> Django, Flask, Express.js. 
-            </div>
-            
-            <div class="skill-item">
-                <span class="skill-label">Databases:</span> PostgreSQL, MongoDB, MySQL. 
-            </div>
-            
-            <div class="skill-item">
-                <span class="skill-label">Other skills:</span> HTML, CSS, React.js; experience with PyCharm, Jupyter Notebook, VS Code, IntelliJ IDEA.
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-title">Testing & QA</div>
+                    <div class="skill-item">• Manual Testing</div>
+                    <div class="skill-item">• Test Automation</div>
+                    <div class="skill-item">• API Testing</div>
+                    <div class="skill-item">• Performance Testing</div>
+                    <div class="skill-item">• Regression Testing</div>
+                    <div class="skill-item">• Test Planning</div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Programming & Tools</div>
+                    <div class="skill-item">• Python</div>
+                    <div class="skill-item">• Java</div>
+                    <div class="skill-item">• Selenium WebDriver</div>
+                    <div class="skill-item">• REST Assured</div>
+                    <div class="skill-item">• JIRA</div>
+                    <div class="skill-item">• Jenkins CI/CD</div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Frameworks & Technologies</div>
+                    <div class="skill-item">• TestNG</div>
+                    <div class="skill-item">• JUnit</div>
+                    <div class="skill-item">• SQL</div>
+                    <div class="skill-item">• Git/GitHub</div>
+                    <div class="skill-item">• Docker</div>
+                    <div class="skill-item">• Cloud Platforms</div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Soft Skills</div>
+                    <div class="skill-item">• Leadership</div>
+                    <div class="skill-item">• Communication</div>
+                    <div class="skill-item">• Problem Solving</div>
+                    <div class="skill-item">• Team Collaboration</div>
+                    <div class="skill-item">• Project Management</div>
+                    <div class="skill-item">• Mentoring</div>
+                </div>
             </div>
         </div>
     </div>
